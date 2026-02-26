@@ -12,7 +12,6 @@ import front from "../assets/front.jpeg";
 import sri from "../assets/sri.png";
 import foot from "../assets/foot.png";
 import grt from "../assets/gtr.png";
-import v from "../assets/front-ve.png";
 import m1 from "../assets/shri-ninja-mini.png";
 import m2 from "../assets/shri-chetak.png";
 import m3 from "../assets/shri-blaze.png";
@@ -116,18 +115,7 @@ function Details() {
 
 
 
-            <div className="about">
-               <div id="textAbout">
-                <img src={v} id="textimage" />
-                    expanding semi-urban markets. This format offers wider sales coverage, stronger brand visibility, and higher earning opportunities. With complete sales, service, and promotional support from Shri VR E-Bike, you can establish yourself as the leading electric scooty provider in your region.
-                    🏆 District Dealership
-                    The District Dealership is a premium opportunity for ambitious entrepreneurs ready to dominate an entire district market. This model comes with expanded territory rights, higher stock capacity, and strong branding support. It is perfect for investors aiming to build a large-scale EV business with long-term profitability.
-                    🇮🇳 All India Dealership Network
-                    We are expanding rapidly across India and welcoming partners who want to grow with a national-level electric mobility brand. With innovative products, growing demand, and a commitment to quality and sustainability, Shri VR E-Bike offers a secure and scalable business opportunity in one of the fastest-growing industries.
-                    Join Shri VR E-Bike today and become a part of India’s electric revolution. Together, let’s drive profit, progress, and a greener tomorrow.
-                </div>
-            </div>
-
+           
             {/*  */}
 
             <div className="about">
