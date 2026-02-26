@@ -1,27 +1,25 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import b1 from "../assets/b1.png"
-import b2 from "../assets/b2.png"
-import b3 from "../assets/b3.png"
-import OLA from "../assets/SHRI OLA (2).png"
-import DL from "../assets/SHRI DL.png"
-import SL from "../assets/SHRI SL.png"
-import AURA from "../assets/SHRI AURA PLUSE.png"
-import VESPA from "../assets/SHRI VESPA.png"
-import front from "../assets/front.jpeg"
-import sri from "../assets/sri.png"
-import foot from "../assets/foot.png"
-import grt from "../assets/gtr.png"
-import v from "../assets/front ve.png"
-import m1 from "../assets/SHRI NINJA MINI ,SHRI  NINJA 2G.png"
-import m2 from "../assets/SHRI CHETAK.png"
-import m3 from "../assets/SHRI BLAZE.png"
-import m4 from "../assets/SHRI CRUSER , SHRI SHARVIL.png"
-import m5 from "../assets/SHRI NINJA PLUSE ,  SHRI GTR+.png"
-import m6 from "../assets/SHRI SPIMRI , SHRI AURA PRO.png"
-import m7 from "../assets/SHRI VELCOP , SHRI LOADER.png"
-
-
+import b1 from "../assets/b1.png";
+import b2 from "../assets/b2.png";
+import b3 from "../assets/b3.png";
+import OLA from "../assets/shri-ola.png";
+import DL from "../assets/shri-dl.png";
+import SL from "../assets/shri-sl.png";
+import AURA from "../assets/shri-aura-plus.png";
+import VESPA from "../assets/shri-vespa.png";
+import front from "../assets/front.jpeg";
+import sri from "../assets/sri.png";
+import foot from "../assets/foot.png";
+import grt from "../assets/gtr.png";
+import v from "../assets/front-ve.png";
+import m1 from "../assets/shri-ninja-mini.png";
+import m2 from "../assets/shri-chetak.png";
+import m3 from "../assets/shri-blaze.png";
+import m4 from "../assets/shri-cruser.png";
+import m5 from "../assets/shri-ninja-plus.png";
+import m6 from "../assets/shri-spimri.png";
+import m7 from "../assets/shri-velcop.png";
 
 import { useNavigate } from "react-router";
 import { MdLocationOn } from "react-icons/md";
