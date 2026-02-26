@@ -3,13 +3,13 @@ import { CiSearch } from "react-icons/ci";
 import b1 from "../assets/b1.png"
 import b2 from "../assets/b2.png"
 import b3 from "../assets/b3.png"
-import OLA from "../assets/SHRI OLA (2).png"
-import DL from "../assets/SHRI DL.png"
-import SL from "../assets/SHRI SL.png"
-import AURA from "../assets/SHRI AURA PLUSE.png"
-import VESPA from "../assets/SHRI VESPA.png"
-import front from "../assets/front.jpeg"
-import sri from "../assets/sri.png"
+import OLA from "../assets/shri-ola.png";
+import DL from "../assets/shri-dl.png";
+import SL from "../assets/shri-sl.png";
+import AURA from "../assets/shri-aura-plus.png";
+import VESPA from "../assets/shri-vespa.png";
+import front from "../assets/front.jpeg";
+import sri from "../assets/sri.png";
 
 function Home() {
     let [value, setValue] = useState("")
