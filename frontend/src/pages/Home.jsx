@@ -87,6 +87,6 @@ function Home() {
             </div>
         </div>
     )
-}
+}console.log("Render Build Test")
 
 export default Home
