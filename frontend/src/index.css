@@ -1,0 +1,772 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@media (min-width:1024px) {
+  #firstDiv {
+    background: linear-gradient(#feb47b, #ffe7d5)
+  }
+
+  .header {
+    background-color: rgb(3, 1, 26);
+    height: 65px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #box {
+    height: 40px;
+    margin-top: 10px;
+    width: 40%;
+    outline: none;
+    padding-left: 9px;
+    border-radius: 9px 0px 0px 9px;
+    border: none;
+  }
+
+  #icon {
+    color: white;
+    background-color: rgb(216, 151, 55);
+    font-size: 30px;
+    height: 40px;
+    margin-top: 10px;
+    width: 40px;
+    padding-left: 9px;
+    border-radius: 0px 9px 9px 0px;
+    cursor: pointer;
+  }
+
+  #logo {
+    position: absolute;
+    left: 9px;
+    top: 0px;
+    height: 70px;
+    width: 70px;
+  }
+
+  #title {
+    color: white;
+    position: absolute;
+    left: 9px;
+    top: 65%;
+    font-size: 11px;
+  }
+
+  .main_con {
+    position: relative;
+    position: absolute;
+    right: 30px;
+    top: 9px;
+    height: 300px;
+  }
+
+  #ul {
+    display: flex;
+    gap: 19px;
+    color: white;
+    list-style: none;
+    position: absolute;
+    right: 2px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+
+
+  #option {
+    display: none;
+    color: white;
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: 0%;
+    background-color: rgb(63, 63, 63);
+    width: 180px;
+    border-radius: 9px;
+    /* margin-top: 56px; */
+  }
+
+  .li {
+    position: relative;
+    height: 100%;
+    margin-top: 9%;
+    margin-bottom: 9px;
+    padding-left: 12%;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    background-color: rgb(230, 227, 227);
+    color: rgb(80, 80, 80);
+  }
+
+
+
+  .main_con:hover #option {
+    display: block;
+  }
+
+  #text {
+    color: green;
+    text-align: center;
+    text-shadow: 0.9px 0.9px 0.3px black;
+    font-family: arial black;
+    margin-top: 5%;
+  }
+
+  .main_body {
+    display: flex;
+    /* Sab kuch horizontal karne ke liye */
+    flex-wrap: wrap;
+    /* Agar screen choti ho toh items niche aa jayein */
+    gap: 20px;
+    /* Items ke beech ka gap */
+    padding: 20px;
+    justify-content: flex-start;
+    /* Items ko left side se align karega */
+  }
+
+  .item_contan {
+    height: 360px;
+    border: 0.9px solid rgb(129, 129, 129);
+    width: 300px;
+    margin-top: 9px;
+  }
+
+  .item_contan:hover {
+    background-color: #ffcaa1;
+    border: 0.9px solid rgb(255, 255, 255);
+    box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
+    border-radius: 9px;
+  }
+
+  .imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image {
+    height: 230px;
+    position: relative;
+    display: inline;
+  }
+
+  #name {
+    height: 30px;
+    display: inline;
+    padding: 9px;
+    border-radius: 9px;
+    font-family: arial black;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105);
+    margin-left: 9px;
+  }
+
+  #price {
+    height: 30px;
+    display: inline;
+    padding: 9px;
+    border-radius: 9px;
+    font-family: arial black;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105);
+    margin-left: 9px;
+  }
+
+  #front {
+    width: 100%;
+    height: 90vh;
+    margin-top: 65px;
+    opacity: 1;
+  }
+
+  .imageTitleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #imageTitle {
+    color: white;
+    position: absolute;
+    top: 35%;
+    z-index: 100;
+    font-family: arial black;
+    font-size: 45px;
+    text-shadow: 6px 6px 6px black;
+  }
+
+  #imageTitle2 {
+    text-shadow: 6px 6px 6px black;
+    font-size: 35px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 43%;
+    z-index: 100;
+  }
+
+  .imagep {
+    text-shadow: 6px 6px 6px black;
+    font-size: 20px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+  }
+
+  .imagepp {
+    text-shadow: 6px 6px 6px black;
+    font-size: 20px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 54%;
+    z-index: 100;
+  }
+
+  .btn {
+    text-shadow: 0.9px 0.9px 6px black;
+    font-size: 20px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 60%;
+    z-index: 100;
+    background-color: green;
+    border-radius: 99px;
+    height: 30px;
+    width: 240px;
+    padding: 9px;
+    padding-left: 3%;
+  }
+
+  .about {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.9px 0.9px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+
+  #about {
+    font-family: arial black;
+    /* box-shadow: 3px 3px 1px black;. */
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+    text-shadow: 0.9px 0.9px 9px black;
+    text-align: center;
+  }
+
+  #textAbout {
+    margin-top: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    display: flex;
+    font-size: 29px;
+    /* border: 0.9px solid black; */
+    gap: 9px;
+  }
+
+  #foot{
+    width: 100%;
+    height: 3%;
+  }
+
+  .footer{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    color: green;
+    font-family: arial black;
+    margin-top: 70px;
+
+  }
+
+  span{
+    color: white;
+  }
+  .footerItem{
+    margin: 9px;
+    font-size: 19px;
+  }
+
+  .fetch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    color: green;
+  }
+
+    .messDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 210px;
+    color: rgb(0, 0, 0);
+    font-size: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #comp{
+    height: 90px;
+    width: 90px;
+  }
+
+  .company{
+    display: flex;
+    font-family: arial black;
+    /* box-shadow: 3px 3px 10px black; */
+    background-color: #ffa560;
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+    text-shadow: 0.9px 0.9px 3px black;
+    text-align: center;
+  }
+
+  .shri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-shadow: 0.9px 0.9px 3px rgb(255, 255, 255);
+  }
+
+  #textimage{
+    height: 470px;
+    width: 400px;
+    border-radius: 9px;
+  }
+
+
+
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+html,
+body {
+  overflow-x: hidden;
+  /* Horizontal scroll ko band karne ke liye */
+  margin: 0;
+  padding: 0;
+
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
+@media (max-width:1024px) {
+
+
+
+
+  .about {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.9px 0.9px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+
+  #about {
+    font-family: arial black;
+    /* box-shadow: 3px 3px 1px black;. */
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+    text-shadow: 0.9px 0.9px 9px black;
+    text-align: center;
+  }
+
+  #textAbout {
+    margin-top: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    /* display: flex; */
+    font-size: 29px;
+    /* border: 0.9px solid black; */
+    gap: 9px;
+  }
+
+  #foot{
+    width: 100%;
+    height: 3%;
+  }
+
+  .footer{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    color: green;
+    font-family: arial black;
+    margin-top: 30px;
+
+  }
+/* ------------------------------ */
+  span{
+    color: white;
+  }
+  .footerItem{
+    margin: 9px;
+    font-size: 15px;
+    padding-top: 5%;
+  }
+
+  .fetch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: green;
+    font-size: 13px;
+  }
+
+    .messDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    color: rgb(0, 0, 0);
+    font-size: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #comp{
+    height: 90px;
+    width: 90px;
+  }
+
+  .company{
+    display: flex;
+    font-family: arial black;
+    /* box-shadow: 3px 3px 10px black; */
+    background-color: #ffa560;
+    padding: 5px;
+    border-radius: 9px;
+    color: white;
+    text-shadow: 0.9px 0.9px 3px black;
+    text-align: center;
+  }
+
+  .shri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-shadow: 0.9px 0.9px 3px rgb(255, 255, 255);
+  }
+
+  #textimage{
+    height: 370px;
+    width: 300px;
+    border-radius: 9px;
+    box-shadow: 0.3px 0.3px 9px black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  */
+
+
+
+
+  #firstDiv {
+    background: linear-gradient(#feb47b, #ffe7d5)
+  }
+
+  .header {
+    background-color: rgb(3, 1, 26);
+    height: 65px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #box {
+    height: 35px;
+    margin-top: 15px;
+    width: 40%;
+    outline: none;
+    padding-left: 9px;
+    border-radius: 9px 0px 0px 9px;
+    border: none;
+  }
+
+  #icon {
+    color: white;
+    background-color: rgb(216, 151, 55);
+    font-size: 30px;
+    height: 35px;
+    margin-top: 15px;
+    width: 40px;
+    padding-left: 9px;
+    border-radius: 0px 9px 9px 0px;
+    cursor: pointer;
+  }
+
+  #logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+  }
+
+  #title {
+    color: white;
+    position: absolute;
+    left: 9px;
+    top: 65%;
+    font-size: 11px;
+  }
+
+  .main_con {
+    position: relative;
+    position: absolute;
+    right: 3px;
+    top: 9px;
+    height: 300px;
+  }
+
+  #ul {
+    display: flex;
+    gap: 19px;
+    color: white;
+    list-style: none;
+    position: absolute;
+    right: 2px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+
+
+  #option {
+    display: none;
+    color: white;
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    top: 0%;
+    background-color: rgb(63, 63, 63);
+    width: 180px;
+    border-radius: 9px;
+    /* margin-top: 56px; */
+  }
+
+  .li {
+    position: relative;
+    height: 100%;
+    margin-top: 9%;
+    margin-bottom: 9px;
+    padding-left: 12%;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    background-color: rgb(230, 227, 227);
+    color: rgb(80, 80, 80);
+  }
+
+
+
+  .main_con:hover #option {
+    display: block;
+  }
+
+  #text {
+    color: green;
+    text-align: center;
+    text-shadow: 0.9px 0.9px 0.3px black;
+    font-family: arial black;
+    margin-top: 5%;
+  }
+
+  .main_body {
+    display: flex;
+    /* Sab kuch horizontal karne ke liye */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Agar screen choti ho toh items niche aa jayein */
+    gap: 20px;
+    /* Items ke beech ka gap */
+    padding: 20px;
+  }
+
+  .item_contan {
+    height: 360px;
+    width: 300px;
+    margin-top: 9px;
+    background-color: #ffcaa1;
+    border: 0.9px solid rgb(255, 255, 255);
+    box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
+    border-radius: 9px;
+  }
+
+  .item_contan:hover {
+    background-color: #ffb881;
+    border: 0.9px solid rgb(255, 255, 255);
+    box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
+    border-radius: 9px;
+  }
+
+  .imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image {
+    height: 230px;
+    position: relative;
+    display: inline;
+  }
+
+  #name {
+    height: 30px;
+    display: inline;
+    padding: 9px;
+    border-radius: 9px;
+    font-family: arial black;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105);
+    margin-left: 9px;
+  }
+
+  #price {
+    height: 30px;
+    display: inline;
+    padding: 9px;
+    border-radius: 9px;
+    font-family: arial black;
+    box-shadow: 3px 3px 3px rgb(105, 105, 105);
+    margin-left: 9px;
+  }
+
+  #front {
+    width: 100%;
+    height: 50vh;
+    margin-top: 65px;
+    opacity: 1;
+  }
+
+  .imageTitleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #imageTitle {
+    color: white;
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+    font-family: arial black;
+    font-size: 35px;
+    text-shadow: 6px 6px 6px black;
+  }
+
+  #imageTitle2 {
+    text-shadow: 6px 6px 6px black;
+    font-size: 20px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 26%;
+    z-index: 100;
+  }
+
+  .imagep {
+    text-shadow: 6px 6px 6px black;
+    font-size: 9px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+  }
+
+  .imagepp {
+    text-shadow: 6px 6px 6px black;
+    font-size: 9px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 32%;
+    z-index: 100;
+  }
+
+  .btn {
+    font-size: 18px;
+    font-family: arial black;
+    color: white;
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    background-color: green;
+    border-radius: 99px;
+    height: 30px;
+    width: auto;
+    padding-top: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+  }
+
+}
