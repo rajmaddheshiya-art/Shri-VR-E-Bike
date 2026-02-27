@@ -8,7 +8,7 @@ import DL from "../assets/shri-dl.png";
 import SL from "../assets/shri-sl.png";
 import AURA from "../assets/shri-aura-plus.png";
 import VESPA from "../assets/shri-vespa.png";
-import front from "../assets/front.jpeg";
+import aa from "../assets/aa.jpeg";
 import sri from "../assets/sri.png";
 
 function Home() {
@@ -54,7 +54,7 @@ function Home() {
                 </div>
             </div>
             {/* main body */}
-            <img src={front} id="front" />
+            <img src={aa} id="front" />
             <div className="imageTitleDiv">
                 <h1 id="imageTitle">SHORT THE LOOK</h1>
                 <h1 id="imageTitle2">RULE THE STREETS!</h1>

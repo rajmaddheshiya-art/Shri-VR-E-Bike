@@ -7,34 +7,37 @@ import { FaMotorcycle } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import b3 from "../assets/b3.png"
 import { MdNavigateNext } from "react-icons/md";
+import k from "../assets/k.png"
+import k2 from "../assets/k2.png"
+import k3 from "../assets/k3.png"
+import k4 from "../assets/k4.png"
+import k5 from "../assets/k5.png"
+import k6 from "../assets/k6.png"
+import k7 from "../assets/k7.png"
+import k8 from "../assets/k8.png"
+import k9 from "../assets/k9.png"
+
 function AutoSlider() {
     return (
         <div className="slideDiv">
             <div className="sliderChild">
-                <img src={SL} className='slide' id='slide3' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />                
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />                
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />                
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={AURA} className='slide' id='slide4' />
-                <img src={VESPA} className='slide' id='slide5' />
-            </div>
-<div className="a">
-    <a href="#slide3">-  Prev</a>
-<a href="#slide5">Next - </a>
-</div>
+                <img src={k} className='slide' id='slide3' />
+                <img src={k2} className='slide' id='slide4' />
+                <img src={k3} className='slide' id='slide4' />
+                <img src={k4} className='slide' id='slide4' />
+                <img src={k5} className='slide' id='slide4' />
+                <img src={k6} className='slide' id='slide4' />
+                <img src={k7} className='slide' id='slide4' />
+                <img src={k8} className='slide' id='slide4' />
+                <img src={k9} className='slide' id='slide5' />
 
-            
+            </div>
+            <div className="a">
+                <a href="#slide3">-  Prev</a>
+                <a href="#slide5">Next - </a>
+            </div>
+
+
 
             <div className="radiusDiv">
                 <h1 id='book'>Book a test Ride</h1>

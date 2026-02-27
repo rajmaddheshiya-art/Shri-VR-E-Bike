@@ -5,7 +5,7 @@
 
 @media (min-width:1024px) {
   #firstDiv {
-    background: linear-gradient(#feb47b, #ffe7d5)
+    background-color: white;
   }
 
   .header {
@@ -36,7 +36,7 @@
 
   #icon {
     color: white;
-    background-color: rgb(216, 151, 55);
+    background-color: rgb(255, 255, 255);
     font-size: 30px;
     height: 40px;
     margin-top: 10px;
@@ -89,7 +89,7 @@
     position: absolute;
     right: 0px;
     top: 0%;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(2, 0, 22);
     width: 180px;
     border-radius: 9px;
     /* margin-top: 56px; */
@@ -143,7 +143,7 @@
   }
 
   .item_contan:hover {
-    background-color: #ffcaa1;
+    background-color: #dddddd;
     border: 0.9px solid rgb(255, 255, 255);
     box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
     border-radius: 9px;
@@ -333,7 +333,7 @@
     display: flex;
     font-family: arial black;
     /* box-shadow: 3px 3px 10px black; */
-    background-color: #ffa560;
+    background-color: #ffffff;
     padding: 5px;
     border-radius: 9px;
     color: white;
@@ -355,36 +355,41 @@
     border-radius: 9px;
   }
 
-  #stop{
+  #stop {
     margin: 5%;
-    color: white;
-    text-shadow: 3px 3px 3px black;
-    background-color: #feb47b;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    background-color: #ffffff;
     box-shadow: 0.3px 0.3px 3px black;
-
+    font-size: 29px;
+    font-family: arial black;
   }
 
-  .slideDiv{
+  .slideDiv {
     position: relative;
     margin: 5%;
- 
+
   }
 
   .sliderChild::-webkit-scrollbar {
-  display: none;
-}
+    display: none;
+  }
 
   .sliderChild {
     display: flex;
-    overflow-x:auto;
+    overflow-x: auto;
     /* scroll-snap-type:x mandatory; */
     gap: 30px;
-       overflow-x: auto;
-    -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    background-color: #01001d;
+    padding: 3%;
+    border-radius: 9px;
   }
 
-  .sliderChild img{
+  .sliderChild img {
     scroll-snap-align: start;
     object-fit: cover;
     border-radius: 9px;
@@ -399,8 +404,8 @@
   }
 
 
- 
-   #key{
+
+  #key {
     width: 400px;
     animation-name: slide;
     animation-duration: 5s;
@@ -408,74 +413,90 @@
     position: relative;
     overflow: hidden;
   }
-  hr{
+
+  hr {
     margin-top: -2.5%;
     box-shadow: 3px 3px 3px black;
-    
+
   }
 
-@keyframes slide {
-  0% {
-    /* transform: translateX(0);  */
-    
-    left: -59%;
-  }
-  100% {
-    /* transform: translateX(100vw);  */
-    left: 100%;
-  }
-}
+  @keyframes slide {
+    0% {
+      /* transform: translateX(0);  */
 
- #manu{
-    color: black;
+      left: -59%;
+    }
+
+    100% {
+      /* transform: translateX(100vw);  */
+      left: 100%;
+    }
+  }
+
+  #manu {
+    color: #15ff00;
     text-shadow: 0.3px 0.3px 3px white;
-    font-family:'Dancing Script', cursive;
-    font-size: 19px;
+    font-family: 'arial black';
+    font-size: 29px;
     animation-name: manu;
     animation-duration: 3s;
     animation-iteration-count: 1;
   }
 
-   #about {
-    font-family:'Courier New', Courier, monospace;
+  #bus {
+    color: #008a1e;
+    font-family: 'arial black';
+    font-size: 29px;
+
+  }
+
+  #about {
+    font-family: 'arial black';
     /* box-shadow: 3px 3px 1px black;. */
     padding: 5px;
     border-radius: 9px;
-    color: white;
-    text-shadow: 0.9px 0.9px 9px black;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.9px 0.9px 9px rgb(255, 255, 255);
     text-align: center;
-    font-size: 16px;
-    box-shadow: 0.3px 0.3px 9px white;
+    font-size: 14px;
+    box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
     margin: 3%;
     margin-top: 5%;
-     background-color: #feb47b;
+    background-color: #ffffff;
+    font-size: 20px;
+
   }
 
 
-  
-  #fq{
+
+  #fq {
     text-align: center;
     margin-top: 9px;
   }
 
-summary{
-  background-color: rgb(3, 1, 26);
-  color: white;
-  font-size: 13px;
-  margin-top: 4%;
-  height: 30px;
-  padding-top: 15px;
-  padding-left: 5px;
-  border-radius: 9px;
-}
+  summary {
+    background-color: rgb(3, 1, 26);
+    color: white;
+    font-size: 13px;
+    margin-top: 1%;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 5px;
+    border-radius: 9px;
+  }
 
-#detail{
-  border-radius: 9px;
-  box-shadow: 3px 3px 9px white;
-  text-shadow: 0.3px 0.3px 3px white;
-}
+  summary:hover {
+    background-color: rgb(6, 1, 54);
 
-  #book{
+  }
+
+  #detail {
+    border-radius: 9px;
+    box-shadow: 3px 3px 9px white;
+    text-shadow: 0.3px 0.3px 3px white;
+  }
+
+  #book {
     color: white;
     margin-left: 6%;
     padding-top: 5%;
@@ -484,7 +505,7 @@ summary{
     font-size: 50px;
   }
 
-  #test{
+  #test {
     color: white;
     padding: 0%;
     font-size: 20px;
@@ -493,7 +514,7 @@ summary{
 
   }
 
-  .a{
+  .a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -501,38 +522,40 @@ summary{
     margin-top: 9px;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: white;
-    background-color:#ff8b33;
+    background-color: #01001d;
     padding: 9px;
     border-radius: 9px;
   }
 
-  #sideImage{
+  #sideImage {
     display: block;
     position: absolute;
     right: -8%;
     top: 460px;
   }
 
-  .socialf{
+  .socialf {
     color: blue;
     padding-top: 9px;
 
   }
-   .socialt{
+
+  .socialt {
     color: rgb(0, 204, 255);
     padding-top: 9px;
 
   }
-   .sociali{
+
+  .sociali {
     color: rgb(255, 0, 179);
     padding-top: 9px;
   }
 
 
-  .media{
+  .media {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -544,7 +567,7 @@ summary{
 
   }
 
-  .radiusDiv{
+  .radiusDiv {
     height: 500px;
     width: 100%;
     background-color: rgb(3, 1, 26);
@@ -552,8 +575,8 @@ summary{
     margin-top: 9%;
   }
 
-      #go {
-    font-family:'Orbitron', sans-serif;
+  #go {
+    font-family: 'Orbitron', sans-serif;
     padding: 5px;
     border-radius: 9px;
     color: rgb(0, 0, 0);
@@ -566,9 +589,9 @@ summary{
   }
 
 
-body::-webkit-scrollbar {
-  display: none;
-}
+  body::-webkit-scrollbar {
+    display: none;
+  }
 
 }
 
@@ -588,12 +611,12 @@ body {
 
 @media (max-width:1024px) {
 
-  #sideImage{
+  #sideImage {
     display: none;
   }
 
 
-    .a{
+  .a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -601,67 +624,69 @@ body {
     margin-top: 9px;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: white;
-    background-color:#ff8b33;
+    background-color: rgb(3, 1, 26);
     padding: 9px;
     border-radius: 9px;
   }
 
 
-  #fq{
+  #fq {
     text-align: center;
     margin-top: 9px;
   }
 
-summary{
-  background-color: rgb(3, 1, 26);
-  color: white;
-  font-size: 13px;
-  margin-top: 4%;
-  height: 30px;
-  padding-top: 15px;
-  padding-left: 5px;
-  border-radius: 9px;
-}
+  summary {
+    background-color: rgb(3, 1, 26);
+    color: white;
+    font-size: 13px;
+    margin-top: 4%;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 5px;
+    border-radius: 9px;
+  }
 
-#detail{
-  border-radius: 9px;
-  box-shadow: 3px 3px 9px white;
-  text-shadow: 0.3px 0.3px 3px white;
-}
+  #detail {
+    border-radius: 9px;
+    box-shadow: 3px 3px 9px white;
+    text-shadow: 0.3px 0.3px 3px white;
+  }
 
-  #book{
+  #book {
     color: white;
     margin-left: 7%;
     padding-top: 18%;
     font-family: arial black;
   }
 
-  #test{
+  #test {
     color: white;
     margin-left: 7%;
     padding-top: 9%;
   }
 
-  .socialf{
+  .socialf {
     color: blue;
     padding-top: 9px;
 
   }
-   .socialt{
+
+  .socialt {
     color: rgb(0, 204, 255);
     padding-top: 9px;
 
   }
-   .sociali{
+
+  .sociali {
     color: rgb(255, 0, 179);
     padding-top: 9px;
   }
 
 
-  .media{
+  .media {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,25 +697,30 @@ summary{
     border-radius: 99px;
   }
 
-  .radiusDiv{
+  .radiusDiv {
     height: 500px;
     width: 100%;
     background-color: rgb(3, 1, 26);
     border-radius: 50px 0px 50px 0;
     margin-top: 9%;
   }
-  .slideDiv{
+
+  .slideDiv {
     position: relative;
     margin: 5%;
   }
+
   .sliderChild {
     display: flex;
-    overflow-x:auto;
+    overflow-x: auto;
     /* scroll-snap-type:x mandatory; */
     gap: 30px;
+    padding: 3%;
+    background-color: #01001d;
+    border-radius: 9px;
   }
 
-  .sliderChild img{
+  .sliderChild img {
     scroll-snap-align: start;
     object-fit: cover;
     border-radius: 9px;
@@ -706,14 +736,16 @@ summary{
 
 
 
-  #manu{
+  #manu {
     color: black;
     text-shadow: 0.3px 0.3px 3px white;
-    font-family:'Dancing Script', cursive;
-    font-size: 19px;
+    font-family: 'arial black';
+    font-size: 14px;
     animation-name: manu;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    color: #15ff00;
+
   }
 
 
@@ -721,7 +753,7 @@ summary{
 
 
 
-   #key{
+  #key {
     width: 200px;
     animation-name: slide;
     animation-duration: 5s;
@@ -729,32 +761,37 @@ summary{
     position: relative;
     overflow: hidden;
   }
-  hr{
+
+  hr {
     margin-top: -5%;
     box-shadow: 3px 3px 3px black;
-    
+
   }
 
-@keyframes slide {
-  0% {
-    /* transform: translateX(0);  */
-    
-    left: -59%;
+  @keyframes slide {
+    0% {
+      /* transform: translateX(0);  */
+
+      left: -59%;
+    }
+
+    100% {
+      /* transform: translateX(100vw);  */
+      left: 100%;
+    }
   }
-  100% {
-    /* transform: translateX(100vw);  */
-    left: 100%;
+
+  #bus {
+    color: #008a1e;
+
   }
-}
 
 
-
-
-#stop{
+  #stop {
     margin: 5%;
-    color: white;
-    text-shadow: 3px 3px 3px black;
-    background-color: #feb47b;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    background-color: #ffffff;
     box-shadow: 0.3px 0.3px 3px black;
 
   }
@@ -771,22 +808,22 @@ summary{
   }
 
   #about {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'arial black';
     padding: 5px;
     border-radius: 9px;
-    color: white;
-    text-shadow: 0.9px 0.9px 9px black;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.9px 0.9px 9px rgb(255, 255, 255);
     text-align: center;
-    font-size: 16px;
-    box-shadow: 0.3px 0.3px 9px white;
+    font-size: 13px;
+    box-shadow: 0.3px 0.3px 9px rgb(61, 61, 61);
     margin: 3%;
     margin-top: 5%;
-    background-color: #ff9a4d;
+    background-color: #ffffff;
   }
 
 
-    #go {
-    font-family:'Orbitron', sans-serif;
+  #go {
+    font-family: 'Orbitron', sans-serif;
     padding: 5px;
     border-radius: 9px;
     color: rgb(0, 0, 0);
@@ -797,6 +834,7 @@ summary{
     margin: 3%;
     margin-top: 5%;
   }
+
   #textAbout {
     margin-top: 9px;
     font-family: Arial, Helvetica, sans-serif;
@@ -862,7 +900,7 @@ summary{
     display: flex;
     font-family: arial black;
     /* box-shadow: 3px 3px 10px black; */
-    background-color: #ffa560;
+    background-color: #ffffff;
     padding: 5px;
     border-radius: 9px;
     color: white;
@@ -921,7 +959,7 @@ summary{
 
 
   #firstDiv {
-    background: linear-gradient(#feb47b, #ffe7d5)
+    background-color: white;
   }
 
   .header {
@@ -951,8 +989,8 @@ summary{
   }
 
   #icon {
-    color: white;
-    background-color: rgb(216, 151, 55);
+    color: rgb(3, 10, 49);
+    background-color: rgb(255, 255, 255);
     font-size: 30px;
     height: 35px;
     margin-top: 15px;
@@ -1005,7 +1043,7 @@ summary{
     position: absolute;
     right: 0px;
     top: 0%;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(1, 3, 29);
     width: 180px;
     border-radius: 9px;
     /* margin-top: 56px; */
@@ -1055,14 +1093,14 @@ summary{
     height: 360px;
     width: 300px;
     margin-top: 9px;
-    background-color: #ffcaa1;
+    background-color: #ffffff;
     border: 0.9px solid rgb(255, 255, 255);
     box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
     border-radius: 9px;
   }
 
   .item_contan:hover {
-    background-color: #ffb881;
+    background-color: #ebebeb;
     border: 0.9px solid rgb(255, 255, 255);
     box-shadow: 0.3px 0.3px 9px rgb(0, 0, 0);
     border-radius: 9px;

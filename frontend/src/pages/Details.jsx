@@ -93,16 +93,16 @@ function Details() {
             <div className="company">
                 <img src={sri} id="comp" />
                 <div className="shri">
-                    <h1 id="shri">Shri VR E-Bike Electric Scooty</h1>
+                    <h1 id="shri">SHRI VR E-Bike Electric Scooty</h1>
                 </div>
 
             </div>
             <marquee id="stop">
-                Shri VR E-Bike Electric Scooty – Smart, Stylish & Sustainable Mobility Shri VR E-Bike Electric Scooty is designed for the modern rider who wants performance, comfort, and eco-friendly transportation in one smart package
+                <span id="manu">SHRI VR E-Bike</span>  Electric Scooty – Smart, Stylish & Sustainable Mobility <span id="manu">SHRI VR E-Bike</span>  Electric Scooty is designed for the modern rider who wants performance, comfort, and eco-friendly transportation in one smart package
             </marquee>
             <img src={pp} id="key" />
             <hr />
-            <h1 id="about"><span id="manu">Leading Electric Bike Manufacturers</span><br />
+            <h1 id="about"><marquee><span id="manu"><span id="bus">LEADING</span> <span id="manu">ELECTRIC BIKE</span>  <span id="bus"> MANUFACTURERS</span> </span></marquee><br />
                 Shri VR E-Bike Electric Scooty – Smart, Stylish & Sustainable Mobility
                 Shri VR E-Bike Electric Scooty is designed for the modern rider who wants performance, comfort, and eco-friendly transportation in one smart package. Built with advanced electric motor technology and a long-lasting lithium battery, this scooty delivers smooth acceleration, silent riding, and zero fuel cost – making it perfect for daily city commutes. Its sleek and stylish design, lightweight body, and comfortable seating ensure a premium riding experience for students, professionals, and families alike. With low maintenance, fast charging capability, and impressive mileage per charge, Shri VR E-Bike is not just a vehicle but a smart investment for the future. Choose Shri VR E-Bike and ride towards a cleaner, greener tomorrow.
             </h1>
@@ -110,14 +110,14 @@ function Details() {
            
 
 
-            <h1 id="about"><span id="manu">Shri VR E-Bike Dealership Opportunities –</span><br />
+            <h1 id="about"><marquee><span id="manu"><span id="bus">SHRI VR E-BIKE</span> <span id="manu">DEALERSHIP</span>  <span id="bus">OPPORTUNITIES</span> </span></marquee><br />
                 Grow With the Future of Electric Mobility
                 At Shri VR E-Bike, we are building a powerful electric mobility network across India and inviting passionate entrepreneurs to join our journey. If you want to start a profitable and future-ready business, our structured dealership models are designed to match every investment level and location size.
-                🚀 Mini Dealership
-                Perfect for small towns and developing areas, the Mini Dealership model requires lower investment while offering high growth potential. It is ideal for first-time business owners who want to enter the fast-growing EV market. With strong brand support, attractive margins, marketing assistance, and technical training, you can confidently build your presence in your local market.
-                🌟 Tehsil Dealership
+                 Mini Dealership
+                Perfect for small towns and developing areas,<br /> <marquee behavior="alternate"><span id="bus">THE MINI</span>  <span id="manu">DEALERSHIP</span> <span id="bus">MODEL</span></marquee> <br />requires lower investment while offering high growth potential. It is ideal for first-time business owners who want to enter the fast-growing EV market. With strong brand support, attractive margins, marketing assistance, and technical training, you can confidently build your presence in your local market.
+                 <br /> <marquee behavior="alternate"><span id="bus">TEHSIL</span>  <span id="manu">DEALERSHIP</span></marquee> <br />
                 Our Tehsil Dealership model is designed forexpanding semi-urban markets. This format offers wider sales coverage, stronger brand visibility, and higher earning opportunities. With complete sales, service, and promotional support from Shri VR E-Bike, you can establish yourself as the leading electric scooty provider in your region.
-                🏆 District Dealership
+                <br /> <marquee behavior="alternate"> <span id="bus">DISTRICT</span>   <span id="manu">DEALERSHIP</span></marquee> <br />
                 The District Dealership is a premium opportunity for ambitious entrepreneurs ready to dominate an entire district market. This model comes with expanded territory rights, higher stock capacity, and strong branding support. It is perfect for investors aiming to build a large-scale EV business with long-term profitability.
                 🇮🇳 All India Dealership Network
                 We are expanding rapidly across India and welcoming partners who want to grow with a national-level electric mobility brand. With innovative products, growing demand, and a commitment to quality and sustainability, Shri VR E-Bike offers a secure and scalable business opportunity in one of the fastest-growing industries.
@@ -128,7 +128,7 @@ function Details() {
 
 
 
-            <h1 id="go">Go Electric, Go Eco-Friendly</h1>
+            <h1 id="go"><span id="bus">GO ELECTRIC ,</span> <span id="manu">GO ECO-FRIENDLY</span> </h1>
 
             
 
