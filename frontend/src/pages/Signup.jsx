@@ -11,9 +11,12 @@ function Signup() {
   let [contact,setContact]=useState("")
   let [password,setPassword]=useState("")
   let [err,setErr] = useState("")
+  let [loading,setLoading] = useState(false)
   let dispatch = useDispatch()
+
   const signupAPI = async (e) => {
     e.preventDefault()
+    setLoading(true)
     setErr("")
     try {
       let data = await axios.post("https://shri-vr-backend.onrender.com/signup",
@@ -28,9 +31,11 @@ function Signup() {
         }
       )
       console.log(data)
+      setLoading(false)
       dispatch(setUserData(data.data))
     } catch (error) {
       console.log(error.response.data.message)
+      setLoading(false)
       setErr(error.response.data.message)
     }
   }
@@ -44,7 +49,7 @@ function Signup() {
         <input type="tel" placeholder="Phone Number"  onChange={(e)=>{setContact(e.target.value)}} />
         <input type="password" placeholder="Create Password"  onChange={(e)=>{setPassword(e.target.value)}} />
         <p id="error">{err}</p>
-        <button type="submit">Sign Up</button>
+        <button type="submit">{loading?"Loading...":"Signup"}</button>
         <p className="login-link">Already have an account? <span id="navLogin" onClick={() => { nav("/login") }}>Login</span></p>
       </form>
     </div>
