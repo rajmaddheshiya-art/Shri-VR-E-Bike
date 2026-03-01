@@ -16,6 +16,16 @@ import k6 from "../assets/k6.png"
 import k7 from "../assets/k7.png"
 import k8 from "../assets/k8.png"
 import k9 from "../assets/k9.png"
+import phone from "../assets/phone.png"
+import m from "../assets/m.png"
+import mm from "../assets/mm.png"
+import mmm from "../assets/mmm.png"
+import work from "../assets/work.png"
+import work3 from "../assets/work3.png"
+import work4 from "../assets/work4.png"
+import work5 from "../assets/work5.png"
+import work6 from "../assets/work6.png"
+import work7 from "../assets/work7.png"
 
 function AutoSlider() {
     return (
@@ -29,7 +39,9 @@ function AutoSlider() {
                 <img src={k6} className='slide' id='slide4' />
                 <img src={k7} className='slide' id='slide4' />
                 <img src={k8} className='slide' id='slide4' />
+                <img src={phone} className='slide' id='slide5' />
                 <img src={k9} className='slide' id='slide5' />
+
 
             </div>
             <div className="a">
@@ -184,20 +196,90 @@ function AutoSlider() {
                 <summary >When Should I Charge The Electric Bike?</summary>
             </details>
 
-            <div className="lastDetail">
+            <h1 id='team'>Our Expert Team</h1>
 
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
-                <h1 id='moto'>{FaTwitter}</h1>
+            <div className="worker">
+                <div className="sale">
+                    <img src={work} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Chandrabind Maurya</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>Senior Sales Manager</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>8853012969</h1>
+                        <h1 id='workDel'>Contact for Dealership</h1>
+
+                    </div>
+
+                </div>
+
+                <br />
+                <hr />
+                <div className="sale">
+                    <img src={work3} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Vinod Kumar kushwaha</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>CEO</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>9125758871</h1>
+                        <h1 id='workDel'>Contact for Dealership</h1>
+                    </div>
+
+                </div>
+
+                <br />
+                <hr />
+                <div className="sale">
+                    <img src={work4} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Prashant sharma</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>office Manager</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>9335615318</h1>
+                        <h1 id='workDel'>Contact for ev scooty and bike information</h1>
+                    </div>
+
+                </div><br />
+
+                <hr />
+
+                <div className="sale">
+                    <img src={work5} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Gulashan Kushwaha</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>Head Mechanic</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>8960109593</h1>
+                        <h1 id='workDel'>Contact for ev scooty parts information <br /> and service / repairing.</h1>
+                    </div>
+
+                </div><br />
+                <hr />
+
+                <div className="sale">
+                    <img src={work6} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Bipin Ojha </h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>Legal Advisor</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>9452404551</h1>
+                        <h1 id='workDel'>Contact for legal advice</h1>
+                    </div>
+
+                </div><br />
+                <hr />
+
+                <div className="sale">
+                    <img src={work7} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Rupesh Maurya</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>Legal Advisor</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span>8960109593</h1>
+                        <h1 id='workDel'>Contact for legal advice</h1>
+                    </div>
+
+                </div>
+
+
+                <br />
 
             </div>
+
+
 
         </div>
     )

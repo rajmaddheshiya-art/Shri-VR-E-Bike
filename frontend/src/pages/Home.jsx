@@ -10,19 +10,34 @@ import AURA from "../assets/shri-aura-plus.png";
 import VESPA from "../assets/shri-vespa.png";
 import aa from "../assets/aa.jpeg";
 import sri from "../assets/sri.png";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { setUserData } from "../../redux/userSlice";
+import { useNavigate } from "react-router";
 
 function Home() {
     let [value, setValue] = useState("")
+    let dispatch = useDispatch()
+    let nav = useNavigate()
+    const logoutAPI = async (e) => {
+        e.preventDefault()
+        try {
+            let data = await axios.get("https://shri-vr-backend.onrender.com/logout", { withCredentials: true })
+            dispatch(setUserData(data.data))
+            nav('/login')
+        } catch (error) {
+            console.log(error)
+        }
+    }
     const search = [
-        { name: "SHRI DL", price: 55000, photo: DL },
-        { name: "SHRI SL ", price: 45000, photo: SL },
-        { name: "SHRI AURA PLUSE", price: 75000, photo: AURA },
-        { name: "SHRI VESPA", price: 70000, photo: VESPA },
-        { name: "SHRI OLA", price: 65000, photo: OLA },
-        { name: "rrf", price: 80000, photo: b2 },
-        { name: "fv", price: 65000, photo: b3 },
-        { name: "rrfdf", price: 56000, photo: b1 },
-
+        { name: "SHRI DL", price: 55000, photo: DL, desc: "Power aur mileage ka perfect balance. City rides ke liye sabse bharosemand model.", key: "High durability and better range." },
+        { name: "SHRI SL ", price: 45000, photo: SL, desc: "India's most affordable ride. No License, No Registration required.", key: "Sporty look and quick acceleration." },
+        { name: "SHRI AURA PLUSE", price: 75000, photo: AURA, desc: "Premium look aur advanced features. Digital console aur fast charging ke saath.", key: "Most stylish and high-tech model." },
+        { name: "SHRI VESPA", price: 70000, photo: VESPA, desc: "Classic retro design modern technology ke saath. Comfort aur style ka mel.", key: "Iconic vintage design." },
+        { name: "SHRI OLA", price: 65000, photo: OLA, desc: "Futuristic design aur behtareen pickup. Nayi generation ki smart choice.", key: "Sporty look and quick acceleration." },
+        { name: "SHRI BEAST", price: 80000, photo: b2, desc: "Sabse powerful aur heavy-duty model. Unchi chadhaan aur mushkil raasto ke liye bani beast", key: "High torque motor aur extra load capacity." },
+        { name: "SHRI CHETAK", price: 60000, photo: b1, desc: "Majbooti aur bharose ka naam. Indian family ke liye ek dam bhetar aur durable choice", key: "Solid build quality aur comfortable riding seat" },
+        { name: "SHRI BEAST.", price: 80000, photo: b3, desc: "Sabse powerful aur heavy-duty model. Unchi chadhaan aur mushkil raasto ke liye bani beast", key: "High torque motor aur extra load capacity." },
 
 
     ]
@@ -31,10 +46,10 @@ function Home() {
             {/* header */}
             <div className="header">
                 <div className="search">
-                    <img src={sri} id="logo"/>
-                    
+                    <img src={sri} id="logo" />
+
                     <input type="text" id="box" placeholder="Search..." onChange={(e) => { setValue(e.target.value) }} />
-                    <p id="icon">{<CiSearch/>}</p>
+                    <p id="icon">{<CiSearch />}</p>
 
                     <div className="main_con">
                         <ul id="ul">
@@ -43,11 +58,13 @@ function Home() {
 
                         <ul id="option">
                             <li className="li">TECH</li><hr />
-                            <li className="li">GALLERY</li><hr />
+                            <li className="li" onClick={() => { nav("/") }}>HOME</li><hr />
                             <li className="li">MODELS</li><hr />
                             <li className="li">CONTACT</li><hr />
                             <li className="li">LOGIN</li><hr />
-                            <li className="li">SIGNUP</li>
+                            <li className="li">SIGNUP</li> <hr />
+                            <li className="li" style={{ color: "red" }} onClick={logoutAPI}>LOGOUT</li>
+
 
                         </ul>
                     </div>
@@ -77,8 +94,11 @@ function Home() {
                                     <div className="imageDiv">
                                         <img src={item.photo} id="image" />
                                     </div><br />
-                                    <p id="name">{item.name}</p><br /><br /><br />
-                                    <p id="price">₹{item.price}</p>
+                                    <div className="lastPoint">
+                                        <p id="name"><span id="nameM">Model :- </span> {item.name}<br /><span id="nameM">Starting at just :- </span><span id="price"> ₹{item.price}</span> </p>
+                                        <p id="desc"><span id="des">Description :</span><br />{item.desc}</p>
+                                        <p id="keyS"><span id="des">Key Point :</span><br />{item.key} <br /> <span id="emi">EMI Available</span></p>
+                                    </div>
                                 </div>
                             )
                         }
@@ -87,6 +107,14 @@ function Home() {
             </div>
         </div>
     )
-}console.log("Render Build Test3")
+}
 
 export default Home
+
+
+
+
+
+
+
+
