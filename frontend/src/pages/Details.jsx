@@ -33,6 +33,26 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import SimpleSlider from "./Slide";
 import AutoSlider from "./Slide";
+import pics from "../assets/pics.jpeg"
+import pics3 from "../assets/pics3.jpeg"
+import pics4 from "../assets/pics4.jpeg"
+import pics5 from "../assets/pics5.jpeg"
+import pics6 from "../assets/pics6.jpeg"
+import pics7 from "../assets/pics7.jpeg"
+import pics8 from "../assets/pics8.jpeg"
+import pics9 from "../assets/pics9.jpeg"
+import pics99 from "../assets/pics99.jpeg"
+import roombike from "../assets/roombike.jpeg"
+import roombike3 from "../assets/roombike3.jpeg"
+import roombike4 from "../assets/roombike4.jpeg"
+import roombike5 from "../assets/roombike5.jpeg"
+import roombike6 from "../assets/roombike6.jpeg"
+import roombike7 from "../assets/roombike7.jpeg"
+import roombike8 from "../assets/roombike8.jpeg"
+import roombike9 from "../assets/roombike9.jpeg"
+import roombike99 from "../assets/roombike99.jpeg"
+import roombike999 from "../assets/roombike999.jpeg"
+
 function Details() {
     let [value, setValue] = useState("")
     let nav = useNavigate()
@@ -66,14 +86,14 @@ function Details() {
 
                         <ul id="option">
                             <li className="li">TECH</li><hr />
-                            <li className="li" >GALLERY</li><hr />
+                            <li className="li" onClick={() => { nav("/video") }}>GALLERY</li><hr />
                             <li className="li" onClick={() => { nav("/model") }}>MODELS</li><hr />
                             <li className="li">CONTACT</li><hr />
                             <li className="li" onClick={() => { nav("/login") }}>LOGIN</li><hr />
                             <li className="li" onClick={() => { nav("/signup") }}>SIGNUP</li><hr />
                             <li className="li">INSTAGRAM</li><hr />
                             <li className="li">FACEBOOK</li><hr />
-                            <li className="li">TWITTER</li> 
+                            <li className="li">TWITTER</li>
                             {/* <li className="li" style={{color:"red"}}>LOGOUT</li> */}
 
 
@@ -93,11 +113,11 @@ function Details() {
             </div>
 
             <div className="india">
-            <h1>बदलता <span id="i">भा</span><span  id="n">र</span><span  id="d">त </span>, बढ़ता <span id="i">भा</span><span  id="n">र</span><span  id="d">त </span>  नए <span id="i">भा</span><span  id="n">र</span><span  id="d">त </span> ,  की नई पहचान</h1>
+                <h1>बदलता <span id="i">भा</span><span id="n">र</span><span id="d">त </span>, बढ़ता <span id="i">भा</span><span id="n">र</span><span id="d">त </span>  नए <span id="i">भा</span><span id="n">र</span><span id="d">त </span> ,  की नई पहचान</h1>
             </div>
 
             <div className="company">
-                <img src={sri} id="comp"/>
+                <img src={sri} id="comp" />
                 <div className="shri">
                     <h1 id="shri">SHRI VR E-Bike Electric Scooty</h1>
                 </div>
@@ -108,7 +128,7 @@ function Details() {
             </marquee>
             <pre><p id="evPrice">EV Scooty Starting at  <span id="zoomPrice"> ₹26,000/- </span>  Only</p></pre>
             <img src={pp} id="key" />
-            <hr id="road"/>
+            <hr id="road" />
             <h1 id="about"><marquee><span id="manu"><span id="bus">LEADING</span> <span id="manu">ELECTRIC BIKE</span>  <span id="bus"> MANUFACTURERS</span> </span></marquee><br />
                 Shri VR E-Bike Electric Scooty – Smart, Stylish & Sustainable Mobility
                 Shri VR E-Bike Electric Scooty is designed for the modern rider who wants performance, comfort, and eco-friendly transportation in one smart package. Built with advanced electric motor technology and a long-lasting lithium battery, this scooty delivers smooth acceleration, silent riding, and zero fuel cost – making it perfect for daily city commutes. Its sleek and stylish design, lightweight body, and comfortable seating ensure a premium riding experience for students, professionals, and families alike. With low maintenance, fast charging capability, and impressive mileage per charge, Shri VR E-Bike is not just a vehicle but a smart investment for the future. Choose Shri VR E-Bike and ride towards a cleaner, greener tomorrow.
@@ -134,6 +154,41 @@ function Details() {
                 Join Shri VR E-Bike today and become a part of India’s electric revolution. Together, let’s drive profit, progress, and a greener tomorrow.
 
             </h1>
+
+            <div className="picsDiv">
+                <h1 id="pics">Our Presence: Excellence in Manufacturing, Showroom & Dealership Network</h1>
+                <img src={pics} className="pics" />
+                <img src={pics4} className="pics" />
+                <img src={pics6} className="pics" />
+                <img src={pics7} className="pics" />
+                <img src={pics8} className="pics" />
+                <img src={pics9} className="pics" />
+                <img src={pics5} className="pics" />
+                <img src={pics99} className="pics" />
+
+
+            </div>
+
+            <div className="picsDiv">
+                <h1 id="pics">Our Showcase</h1>
+                <img src={roombike9} className="pics" />
+                <img src={roombike8} className="pics" />
+                <img src={roombike4} className="pics" />
+                <img src={roombike5} className="pics" />
+                <img src={roombike6} className="pics" />
+                <img src={roombike7} className="pics" />
+                <img src={roombike} className="pics" />
+                <img src={roombike3} className="pics" />
+                <img src={roombike99} className="pics" />
+                <img src={roombike999} className="pics" />
+
+
+
+
+            </div>
+
+            
+
 
 
             <h1 id="about"><span id="manu"><span id="bus">Driving Instructions</span> <span id="manu"> </span>  <span id="bus"> </span> </span><br />

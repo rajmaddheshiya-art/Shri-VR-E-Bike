@@ -352,9 +352,10 @@
     text-shadow: 0.9px 0.9px 3px rgb(255, 255, 255);
   }
 
-  #shri{
+  #shri {
     text-align: center;
   }
+
   #textimage {
     height: 470px;
     width: 400px;
@@ -726,7 +727,7 @@
   }
 
 
-    .workContact {
+  .workContact {
     margin-top: 6%;
     padding-left: 3%;
   }
@@ -750,7 +751,8 @@
     padding-top: 3%;
 
   }
-    #workDel {
+
+  #workDel {
     font-size: 11px;
     font-family: arial black;
     padding-top: 3%;
@@ -789,12 +791,60 @@
     box-shadow: 0.3px 0.3px 3px black;
   }
 
-#team{
-  text-align: center;
-  margin-top: 5%;
-  font-size: 40px;
-  font-family: arial black;
-}
+  #team {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: arial black;
+  }
+
+
+
+
+    .videoDiv{
+    width: 94%;
+    margin: 3%;
+     box-shadow: 0.3px 0.3px 9px black;
+    border-radius: 9px;
+
+  }
+  #video{
+    height: 600px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-top: 5%;
+    margin-left: 6%;
+
+
+  }
+
+  #VD{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #pics {
+    text-align: center;
+    font-family: arial black;
+    color: #040657;
+  }
+  .picsDiv{
+    width: 94%;
+    margin: 3%;
+    border-radius: 9px;
+    box-shadow: 0.3px 0.3px 9px black;
+  }
+
+    .pics{
+    width: 40%;
+    height: 300px;
+    margin-top: 9px;
+    margin-left: 6%;
+    border-radius: 9px;
+  }
+
 
 
 }
@@ -924,14 +974,56 @@ body {
   cursor: pointer;
 }
 
-#error{
+#error {
   color: rgb(223, 82, 82);
   text-align: center;
 }
+
 /* ------------------------------------------------------------------------------ */
 
 
 @media (max-width:1024px) {
+
+  .videoDiv{
+    width: 94%;
+    margin: 3%;
+     box-shadow: 0.3px 0.3px 9px black;
+    border-radius: 9px;
+
+  }
+  #video{
+    height: 400px;
+    width: 94%;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-top: 5%;
+    margin-left: 3%;
+
+
+  }
+
+  #VD{
+    height: 400px;
+  }
+
+  #pics {
+    text-align: center;
+    font-family: arial black;
+    color: #040657;
+    font-size: 19px;
+  }
+  .picsDiv{
+    width: 94%;
+    margin: 3%;
+    border-radius: 9px;
+    box-shadow: 0.3px 0.3px 9px black;
+  }
+
+    .pics{
+    width: 90%;
+    margin: 5%;
+    border-radius: 9px;
+  }
 
   .workContact {
     margin-top: 9%;
@@ -957,7 +1049,8 @@ body {
     padding-top: 3%;
 
   }
-    #workDel {
+
+  #workDel {
     font-size: 11px;
     font-family: arial black;
     padding-top: 3%;

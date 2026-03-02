@@ -59,7 +59,7 @@ function Home() {
                         <ul id="option">
                             <li className="li">TECH</li><hr />
                             <li className="li" onClick={() => { nav("/") }}>HOME</li><hr />
-                            <li className="li">MODELS</li><hr />
+                            <li className="li" onClick={() => { nav("/video") }}>GALLERY</li><hr />
                             <li className="li">CONTACT</li><hr />
                             <li className="li">LOGIN</li><hr />
                             <li className="li">SIGNUP</li> <hr />

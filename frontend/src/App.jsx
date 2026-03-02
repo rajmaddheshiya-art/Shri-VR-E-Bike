@@ -57,16 +57,18 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import getCurrentUser from "../getCurrent";
 import { useSelector } from "react-redux";
+import Video from "./pages/Video";
 
-function App(){
+function App() {
   getCurrentUser()
-  let {userData} = useSelector(state=>state.user)
-  return(
+  let { userData } = useSelector(state => state.user)
+  return (
     <Routes>
-      <Route path="/" element={<Details/>}/>
-      <Route path="/model" element={userData?<Home/>:<Navigate to="/login"/>}/>
-      <Route path="/login" element={!userData?<Login/>:<Navigate to="/"/>}/>
-      <Route path="/signup" element={!userData?<Signup/>:<Navigate to="/"/>}/>
+      <Route path="/" element={<Details />} />
+      <Route path="/video" element={userData ? <Video /> : <Navigate to="/login" />} />
+      <Route path="/model" element={userData ? <Home /> : <Navigate to="/login" />} />
+      <Route path="/login" element={!userData ? <Login /> : <Navigate to="/" />} />
+      <Route path="/signup" element={!userData ? <Signup /> : <Navigate to="/" />} />
     </Routes>
   )
 }

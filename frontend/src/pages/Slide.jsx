@@ -26,6 +26,7 @@ import work4 from "../assets/work4.png"
 import work5 from "../assets/work5.png"
 import work6 from "../assets/work6.png"
 import work7 from "../assets/work7.png"
+import work8 from "../assets/work8.png"
 
 function AutoSlider() {
     return (
@@ -224,6 +225,20 @@ function AutoSlider() {
 
                 </div>
 
+                   <br />
+                <hr />
+
+                <div className="sale">
+                    <img src={work8} id="work" />
+                    <div className="workContact">
+                        <h1 id='workName'><span id='chan'>Name :- </span>Awadh Kishr Nigam</h1>
+                        <h1 id='workRole'><span id='chan'>Post :- </span>BDM</h1>
+                        <h1 id='workPhone'><span id='chan'>Contact :- </span> 9554646219</h1>
+                        <h1 id='workDel'>Contact for dealership</h1>
+                    </div>
+
+                </div>
+
                 <br />
                 <hr />
                 <div className="sale">
@@ -273,6 +288,9 @@ function AutoSlider() {
                     </div>
 
                 </div>
+
+
+             
 
 
                 <br />
