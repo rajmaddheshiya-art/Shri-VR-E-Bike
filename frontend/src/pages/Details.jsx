@@ -52,6 +52,67 @@ import roombike8 from "../assets/roombike8.jpeg"
 import roombike9 from "../assets/roombike9.jpeg"
 import roombike99 from "../assets/roombike99.jpeg"
 import roombike999 from "../assets/roombike999.jpeg"
+import meeting from "../assets/meeting.jpeg"
+import p0 from "../assets/p0.jpeg"
+import p1 from "../assets/p1.jpeg"
+import p2 from "../assets/p2.jpeg"
+import p3 from "../assets/p3.jpeg"
+import p4 from "../assets/p4.jpeg"
+import p5 from "../assets/p5.jpeg"
+import p6 from "../assets/p6.jpeg"
+import p7 from "../assets/p7.jpeg"
+import p8 from "../assets/p8.jpeg"
+import p9 from "../assets/p9.jpeg"
+import pp0 from "../assets/pp0.jpeg"
+import pp3 from "../assets/pp3.jpeg"
+import pp4 from "../assets/pp4.jpeg"
+import pp5 from "../assets/pp5.jpeg"
+import pp6 from "../assets/pp6.jpeg"
+import pp7 from "../assets/pp7.jpeg"
+import pp8 from "../assets/pp8.jpeg"
+import pp9 from "../assets/pp9.jpeg"
+import ppp0 from "../assets/ppp0.jpeg"
+import ppp3 from "../assets/ppp3.jpeg"
+import ppp4 from "../assets/ppp4.jpeg"
+import ppp5 from "../assets/ppp5.jpeg"
+import ppp6 from "../assets/ppp6.jpeg"
+import ppp7 from "../assets/ppp7.jpeg"
+import ppp9 from "../assets/ppp9.jpeg"
+import pppp0 from "../assets/pppp0.jpeg"
+import pppp3 from "../assets/pppp3.jpeg"
+import pppp4 from "../assets/pppp4.jpeg"
+import pppp5 from "../assets/pppp5.jpeg"
+import pppp6 from "../assets/pppp6.jpeg"
+import pppp7 from "../assets/pppp7.jpeg"
+import pppp8 from "../assets/pppp8.jpeg"
+import pppp9 from "../assets/pppp9.jpeg"
+import kl0 from "../assets/kl0.jpeg"
+import kl3 from "../assets/kl3.jpeg"
+import kl4 from "../assets/kl4.jpeg"
+import kl5 from "../assets/kl5.jpeg"
+import k6 from "../assets/k6.jpeg"
+import kl7 from "../assets/kl7.jpeg"
+import kl8 from "../assets/kl8.jpeg"
+import kl9 from "../assets/kl9.jpeg"
+
+import kkl3 from "../assets/kkl3.jpeg"
+import kkl4 from "../assets/kkl4.jpeg"
+import kkl5 from "../assets/kkl5.jpeg"
+import kkl6 from "../assets/kkl6.jpeg"
+import kkl7 from "../assets/kkl7.jpeg"
+import kkl8 from "../assets/kkl8.jpeg"
+import kkl9 from "../assets/kkl9.jpeg"
+
+import kkkl3 from "../assets/kkkl3.jpeg"
+import kkkl4 from "../assets/kkkl4.jpeg"
+import kkkl5 from "../assets/kkkl5.jpeg"
+import kkkl6 from "../assets/kkkl6.jpeg"
+import kkkl7 from "../assets/kkkl7.jpeg"
+import kkkl8 from "../assets/kkkl8.jpeg"
+import kkkl9 from "../assets/kkkl9.jpeg"
+import kkkl99 from "../assets/kkkl9.jpeg"
+import kkkl999 from "../assets/kkkl9.jpeg"
+import kkkl9999 from "../assets/kkkl9.jpeg"
 
 function Details() {
     let [value, setValue] = useState("")
@@ -156,6 +217,14 @@ function Details() {
             </h1>
 
             <div className="picsDiv">
+                <h1 id="pics">Our Office and Meeting Room</h1>
+                <img src={meeting} className="pics" />
+
+
+
+            </div><br />
+
+            <div className="picsDiv">
                 <h1 id="pics">Our Presence: Excellence in Manufacturing, Showroom & Dealership Network</h1>
                 <img src={pics} className="pics" />
                 <img src={pics4} className="pics" />
@@ -181,13 +250,76 @@ function Details() {
                 <img src={roombike3} className="pics" />
                 <img src={roombike99} className="pics" />
                 <img src={roombike999} className="pics" />
+                <img src={p0} className="pics" alt="p0" />
+                <img src={p1} className="pics" alt="p1" />
+                <img src={p2} className="pics" alt="p2" />
+                <img src={p3} className="pics" alt="p3" />
+                <img src={p4} className="pics" alt="p4" />
+                <img src={p5} className="pics" alt="p5" />
+                <img src={p6} className="pics" alt="p6" />
+                <img src={p7} className="pics" alt="p7" />
+                <img src={p8} className="pics" alt="p8" />
+                <img src={p9} className="pics" alt="p9" />
+                <img src={pp0} className="pics" alt="pp0" />
+                <img src={pp3} className="pics" alt="pp3" />
+                <img src={pp4} className="pics" alt="pp4" />
+                <img src={pp5} className="pics" alt="pp5" />
+                <img src={pp6} className="pics" alt="pp6" />
+                <img src={pp7} className="pics" alt="pp7" />
+                <img src={pp8} className="pics" alt="pp8" />
+                <img src={pp9} className="pics" alt="pp9" />
+                <img src={ppp0} className="pics" alt="ppp0" />
+                <img src={ppp3} className="pics" alt="ppp3" />
+                <img src={ppp4} className="pics" alt="ppp4" />
+                <img src={ppp5} className="pics" alt="ppp5" />
+                <img src={ppp6} className="pics" alt="ppp6" />
+                <img src={ppp7} className="pics" alt="ppp7" />
+                <img src={ppp9} className="pics" alt="ppp9" />
+                <img src={pppp0} className="pics" alt="pppp0" />
+                <img src={pppp3} className="pics" alt="pppp3" />
+                <img src={pppp4} className="pics" alt="pppp4" />
+                <img src={pppp5} className="pics" alt="pppp5" />
+                <img src={pppp6} className="pics" alt="pppp6" />
+                <img src={pppp7} className="pics" alt="pppp7" />
+                <img src={pppp8} className="pics" alt="pppp8" />
+                <img src={pppp9} className="pics" alt="pppp9" />
+
+<img src={kl0} className="pics" alt="kl0" />
+
+<img src={kl3} className="pics" alt="kl3" />
+<img src={kl4} className="pics" alt="kl4" />
+<img src={kl5} className="pics" alt="kl5" />
+<img src={k6} className="pics" alt="kl6" />
+<img src={kl7} className="pics" alt="kl7" />
+<img src={kl8} className="pics" alt="kl8" />
+<img src={kl9} className="pics" alt="kl9" />
 
 
+<img src={kkl3} className="pics" alt="kkl3" />
+<img src={kkl4} className="pics" alt="kkl4" />
+<img src={kkl5} className="pics" alt="kkl5" />
+<img src={kkl6} className="pics" alt="kkl6" />
+<img src={kkl7} className="pics" alt="kkl7" />
+<img src={kkl8} className="pics" alt="kkl8" />
+<img src={kkl9} className="pics" alt="kkl9" />
+
+
+
+<img src={kkkl3} className="pics" alt="kkkl3" />
+<img src={kkkl4} className="pics" alt="kkkl4" />
+<img src={kkkl5} className="pics" alt="kkkl5" />
+<img src={kkkl6} className="pics" alt="kkkl6" />
+<img src={kkkl7} className="pics" alt="kkkl7" />
+<img src={kkkl8} className="pics" alt="kkkl8" />
+<img src={kkkl9} className="pics" alt="kkkl9" />
+<img src={kkkl99} className="pics" alt="kkkl9" />
+<img src={kkkl999} className="pics" alt="kkkl9" />
+<img src={kkkl9999} className="pics" alt="kkkl9" />
 
 
             </div>
 
-            
+
 
 
 

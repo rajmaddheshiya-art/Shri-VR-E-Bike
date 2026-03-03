@@ -20,6 +20,8 @@ function Signup() {
     setErr("")
     try {
       let data = await axios.post("https://shri-vr-backend.onrender.com/signup",
+      // let data = await axios.post("http://localhost:8000/signup",
+
         {
           name,
           email,

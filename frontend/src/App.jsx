@@ -55,20 +55,34 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import getCurrentUser from "../getCurrent";
+import getCurrentUser from "./pages/getCurrent";
 import { useSelector } from "react-redux";
 import Video from "./pages/Video";
+import getOtherUser from "./pages/getOther";
+import Data from "./pages/Data";
 
 function App() {
   getCurrentUser()
-  let { userData } = useSelector(state => state.user)
+  getOtherUser()
+  let { userData,isLoading} = useSelector(state => state.user)
+  if (isLoading) {
+    return (
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh'}}>
+            <h2>Loading...</h2>
+        </div>
+    );
+  }
   return (
     <Routes>
       <Route path="/" element={<Details />} />
+
+      <Route path="/data" element={userData?.role==="admin"?<Data />:<Navigate to="/" />} />
+
       <Route path="/video" element={userData ? <Video /> : <Navigate to="/login" />} />
       <Route path="/model" element={userData ? <Home /> : <Navigate to="/login" />} />
       <Route path="/login" element={!userData ? <Login /> : <Navigate to="/" />} />
       <Route path="/signup" element={!userData ? <Signup /> : <Navigate to="/" />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
 }

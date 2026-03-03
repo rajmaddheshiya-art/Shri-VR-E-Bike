@@ -23,6 +23,7 @@ function Home() {
         e.preventDefault()
         try {
             let data = await axios.get("https://shri-vr-backend.onrender.com/logout", { withCredentials: true })
+            // let data = await axios.get("http://localhost:8000/logout", { withCredentials: true })
             dispatch(setUserData(data.data))
             nav('/login')
         } catch (error) {
@@ -46,7 +47,7 @@ function Home() {
             {/* header */}
             <div className="header">
                 <div className="search">
-                    <img src={sri} id="logo" />
+                    <img src={sri} id="logo"/>
 
                     <input type="text" id="box" placeholder="Search..." onChange={(e) => { setValue(e.target.value) }} />
                     <p id="icon">{<CiSearch />}</p>
@@ -63,6 +64,7 @@ function Home() {
                             <li className="li">CONTACT</li><hr />
                             <li className="li">LOGIN</li><hr />
                             <li className="li">SIGNUP</li> <hr />
+                            <li className="li" style={{ color: "green" }} onClick={() => { nav("/data") }}>ADMIN</li> <hr />
                             <li className="li" style={{ color: "red" }} onClick={logoutAPI}>LOGOUT</li>
 
 
