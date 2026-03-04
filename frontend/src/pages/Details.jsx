@@ -114,6 +114,14 @@ import kkkl99 from "../assets/kkkl9.jpeg"
 import kkkl999 from "../assets/kkkl9.jpeg"
 import kkkl9999 from "../assets/kkkl9.jpeg"
 
+import sd3 from "../assets/sd3.jpeg"
+import sd4 from "../assets/sd4.mp4"
+import sd5 from "../assets/sd5.jpeg"
+import sd6 from "../assets/sd6.jpeg"
+import sd7 from "../assets/sd7.jpeg"
+import sd8 from "../assets/sd8.jpeg"
+
+
 function Details() {
     let [value, setValue] = useState("")
     let nav = useNavigate()
@@ -238,6 +246,18 @@ function Details() {
 
             </div>
 
+            <div className="picsDiv" id="holiDiv">
+                <h1 id="pics"><span id="holi">H</span><span id="holio">o</span><span id="holil">l</span><span id="holii">i</span>  Special</h1>
+                <img src={sd3} className="pics" />
+                <img src={sd5} className="pics" />
+                <img src={sd6} className="pics" />
+                <img src={sd7} className="pics" />
+                <img src={sd8} className="pics" />
+                <video src={sd4} controls className="pics"></video>
+
+
+            </div>
+
             <div className="picsDiv">
                 <h1 id="pics">Our Showcase</h1>
                 <img src={roombike9} className="pics" />
@@ -284,40 +304,43 @@ function Details() {
                 <img src={pppp8} className="pics" alt="pppp8" />
                 <img src={pppp9} className="pics" alt="pppp9" />
 
-<img src={kl0} className="pics" alt="kl0" />
+                <img src={kl0} className="pics" alt="kl0" />
 
-<img src={kl3} className="pics" alt="kl3" />
-<img src={kl4} className="pics" alt="kl4" />
-<img src={kl5} className="pics" alt="kl5" />
-<img src={k6} className="pics" alt="kl6" />
-<img src={kl7} className="pics" alt="kl7" />
-<img src={kl8} className="pics" alt="kl8" />
-<img src={kl9} className="pics" alt="kl9" />
-
-
-<img src={kkl3} className="pics" alt="kkl3" />
-<img src={kkl4} className="pics" alt="kkl4" />
-<img src={kkl5} className="pics" alt="kkl5" />
-<img src={kkl6} className="pics" alt="kkl6" />
-<img src={kkl7} className="pics" alt="kkl7" />
-<img src={kkl8} className="pics" alt="kkl8" />
-<img src={kkl9} className="pics" alt="kkl9" />
+                <img src={kl3} className="pics" alt="kl3" />
+                <img src={kl4} className="pics" alt="kl4" />
+                <img src={kl5} className="pics" alt="kl5" />
+                <img src={k6} className="pics" alt="kl6" />
+                <img src={kl7} className="pics" alt="kl7" />
+                <img src={kl8} className="pics" alt="kl8" />
+                <img src={kl9} className="pics" alt="kl9" />
 
 
+                <img src={kkl3} className="pics" alt="kkl3" />
+                <img src={kkl4} className="pics" alt="kkl4" />
+                <img src={kkl5} className="pics" alt="kkl5" />
+                <img src={kkl6} className="pics" alt="kkl6" />
+                <img src={kkl7} className="pics" alt="kkl7" />
+                <img src={kkl8} className="pics" alt="kkl8" />
+                <img src={kkl9} className="pics" alt="kkl9" />
 
-<img src={kkkl3} className="pics" alt="kkkl3" />
-<img src={kkkl4} className="pics" alt="kkkl4" />
-<img src={kkkl5} className="pics" alt="kkkl5" />
-<img src={kkkl6} className="pics" alt="kkkl6" />
-<img src={kkkl7} className="pics" alt="kkkl7" />
-<img src={kkkl8} className="pics" alt="kkkl8" />
-<img src={kkkl9} className="pics" alt="kkkl9" />
-<img src={kkkl99} className="pics" alt="kkkl9" />
-<img src={kkkl999} className="pics" alt="kkkl9" />
-<img src={kkkl9999} className="pics" alt="kkkl9" />
+
+
+                <img src={kkkl3} className="pics" alt="kkkl3" />
+                <img src={kkkl4} className="pics" alt="kkkl4" />
+                <img src={kkkl5} className="pics" alt="kkkl5" />
+                <img src={kkkl6} className="pics" alt="kkkl6" />
+                <img src={kkkl7} className="pics" alt="kkkl7" />
+                <img src={kkkl8} className="pics" alt="kkkl8" />
+                <img src={kkkl9} className="pics" alt="kkkl9" />
+                <img src={kkkl99} className="pics" alt="kkkl9" />
+                <img src={kkkl999} className="pics" alt="kkkl9" />
+                <img src={kkkl9999} className="pics" alt="kkkl9" />
 
 
             </div>
+
+
+
 
 
 

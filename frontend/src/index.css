@@ -801,14 +801,15 @@
 
 
 
-    .videoDiv{
+  .videoDiv {
     width: 94%;
     margin: 3%;
-     box-shadow: 0.3px 0.3px 9px black;
+    box-shadow: 0.3px 0.3px 9px black;
     border-radius: 9px;
 
   }
-  #video{
+
+  #video {
     height: 600px;
     width: 40%;
     object-fit: cover;
@@ -819,7 +820,7 @@
 
   }
 
-  #VD{
+  #VD {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -830,14 +831,15 @@
     font-family: arial black;
     color: #040657;
   }
-  .picsDiv{
+
+  .picsDiv {
     width: 94%;
     margin: 3%;
     border-radius: 9px;
     box-shadow: 0.3px 0.3px 9px black;
   }
 
-    .pics{
+  .pics {
     width: 40%;
     height: 300px;
     margin-top: 9px;
@@ -845,16 +847,18 @@
     border-radius: 9px;
   }
 
-    .dataDiv{
-margin: 3%;
+  .dataDiv {
+    margin: 3%;
 
   }
-  #maindata{
+
+  #maindata {
     font-family: arial black;
     color: #0056b3;
     font-size: 16px;
   }
-    #userName{
+
+  #userName {
     color: #084586;
     font-family: arial black;
     font-size: 18px;
@@ -996,33 +1000,59 @@ body {
   text-align: center;
 }
 
+
+#holi{
+  color: #ff0000;
+  text-shadow: 0.1px 0.1px 0.3px black;
+}
+#holio{
+  color: #00ff00;
+  text-shadow: 0.1px 0.1px 0.3px black;
+}
+#holil{
+  color: #0000ff;
+  text-shadow: 0.1px 0.1px 0.3px black;
+}
+
+#holii{
+  color: #ffff00;
+  text-shadow: 0.1px 0.1px 0.3px black;
+}
+
+
+
+
+
 /* ------------------------------------------------------------------------------ */
 
 
 @media (max-width:1024px) {
 
-  .dataDiv{
-margin: 3%;
+  .dataDiv {
+    margin: 3%;
   }
-  #maindata{
+
+  #maindata {
     font-family: arial black;
     color: #0056b3;
     font-size: 16px;
   }
-    #userName{
+
+  #userName {
     color: #084586;
     font-family: arial black;
     font-size: 18px;
   }
 
-  .videoDiv{
+  .videoDiv {
     width: 94%;
     margin: 3%;
-     box-shadow: 0.3px 0.3px 9px black;
+    box-shadow: 0.3px 0.3px 9px black;
     border-radius: 9px;
 
   }
-  #video{
+
+  #video {
     height: 400px;
     width: 94%;
     object-fit: cover;
@@ -1033,7 +1063,7 @@ margin: 3%;
 
   }
 
-  #VD{
+  #VD {
     height: 400px;
   }
 
@@ -1043,14 +1073,15 @@ margin: 3%;
     color: #040657;
     font-size: 19px;
   }
-  .picsDiv{
+
+  .picsDiv {
     width: 94%;
     margin: 3%;
     border-radius: 9px;
     box-shadow: 0.3px 0.3px 9px black;
   }
 
-    .pics{
+  .pics {
     width: 90%;
     margin: 5%;
     border-radius: 9px;
