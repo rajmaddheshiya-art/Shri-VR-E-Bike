@@ -1001,24 +1001,84 @@ body {
 }
 
 
-#holi{
+#holi {
   color: #ff0000;
   text-shadow: 0.1px 0.1px 0.3px black;
 }
-#holio{
+
+#holio {
   color: #00ff00;
   text-shadow: 0.1px 0.1px 0.3px black;
 }
-#holil{
+
+#holil {
   color: #0000ff;
   text-shadow: 0.1px 0.1px 0.3px black;
 }
 
-#holii{
+#holii {
   color: #ffff00;
   text-shadow: 0.1px 0.1px 0.3px black;
 }
 
+
+.aryDiv {
+  width: 94%;
+  margin: 3%;
+  border-radius: 9px;
+  box-shadow: 0.3px 0.3px 9px black;
+}
+
+#aryTitle {
+  text-align: center;
+  font-family: arial black;
+  text-shadow: 0.3px 0.3px 0.9px black;
+  font-size: 22px;
+  box-shadow: 0.3px 0.3px 9px black;
+  border-radius: 9px 9px 0px 0px;
+
+}
+
+#aryTitleSpan {
+  color: green;
+}
+
+.ary {
+  width: 25%;
+  margin: 4%;
+  border-radius: 9px;
+  /* box-shadow: 0.3px 0.3px 9px black; */
+
+
+}
+
+.aryADDDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.aryAD {
+  position: relative;
+  position: fixed;
+  top: 11%;
+  z-index: 9999;
+  width: 26%;
+  border-radius: 9px;
+  box-shadow: 0.3px 0.3px 9px rgb(255, 255, 255);
+}
+
+
+#cut {
+  color: white;
+  position: fixed;
+  top: 11%;
+  right: 37%;
+  font-size: 30px;
+  z-index: 99999;
+
+}
 
 
 
@@ -1027,6 +1087,59 @@ body {
 
 
 @media (max-width:1024px) {
+
+
+
+  #aryTitle {
+    text-align: center;
+    font-family: arial black;
+    text-shadow: 0.3px 0.3px 0.9px black;
+    font-size: 22px;
+    border-bottom: 0.4px solid black;
+    box-shadow: 0.3px 0.3px 9px black;
+    border-radius: 9px 9px 0px 0px;
+
+
+  }
+
+  .aryADDDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .aryAD {
+    position: relative;
+    position: fixed;
+    top: 13%;
+    z-index: 9999;
+    width: 93%;
+    border-radius: 9px;
+    box-shadow: 0.3px 0.3px 9px rgb(255, 255, 255);
+  }
+
+  #cut {
+    color: white;
+    position: fixed;
+    top: 13%;
+    right: 4%;
+    font-size: 30px;
+    z-index: 99999;
+
+  }
+
+  #aryTitleSpan {
+    color: green;
+  }
+
+  .ary {
+    width: 92%;
+    margin: 4%;
+    border-radius: 9px;
+    /* box-shadow: 0.3px 0.3px 9px black; */
+
+  }
 
   .dataDiv {
     margin: 3%;

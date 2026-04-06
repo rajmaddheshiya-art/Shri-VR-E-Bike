@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import b1 from "../assets/b1.png";
 import b2 from "../assets/b2.png";
@@ -122,9 +122,50 @@ import sd7 from "../assets/sd7.jpeg"
 import sd8 from "../assets/sd8.jpeg"
 
 
+
+import ary3 from "../assets/ary3.jpeg"
+import ary4 from "../assets/ary4.jpeg"
+import ary5 from "../assets/ary5.jpeg"
+import ary6 from "../assets/ary6.jpeg"
+import ary7 from "../assets/ary7.jpeg"
+import ary8 from "../assets/ary8.jpeg"
+import ary9 from "../assets/ary9.jpeg"
+
+import ary03 from "../assets/ary03.jpeg"
+import ary04 from "../assets/ary04.jpeg"
+import ary05 from "../assets/ary05.jpeg"
+import ary06 from "../assets/ary06.jpeg"
+import { GrClose } from "react-icons/gr";
+
 function Details() {
     let [value, setValue] = useState("")
     let nav = useNavigate()
+    let [show, setShow] = useState(false)
+    let [shows, setShows] = useState(false)
+    let [showss, setShowss] = useState(false)
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShow(true)
+        }, 5000)
+        return () => clearTimeout(timer)
+    }, [])
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShows(true)
+        }, 10000)
+        return () => clearTimeout(timer)
+    }, [])
+
+
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setShowss(true)
+    //     }, 2000)
+    //     return () => clearTimeout(timer)
+    // }, [])
     const search = [
         { name: "SHRI DL", price: 55000, photo: DL },
         { name: "SHRI SL ", price: 45000, photo: SL },
@@ -141,6 +182,27 @@ function Details() {
     return (
         <div id="firstDiv">
             {/* header */}
+            <div className="aryADDDiv">
+                {show && <GrClose id="cut" onClick={() => { setShow(false) }} />}
+                {
+                    show && <img src={ary04} className="aryAD" alt="project-3" />
+                }
+            </div>
+
+            <div className="aryADDDiv">
+                {shows && <GrClose id="cut" onClick={() => { setShows(false) }} />}
+                {
+                    shows && <img src={ary8} className="aryAD" alt="project-3" />
+                }
+            </div>
+
+
+            {/* <div className="aryADDDiv">
+                {shows && <GrClose id="cut" onClick={() => { setShowss(false) }} />}
+                {
+                    shows && <img src={ary03} className="aryAD" alt="project-3" />
+                }
+            </div> */}
             <div className="header">
                 <div className="search">
                     <img src={sri} id="logo" />
@@ -179,6 +241,22 @@ function Details() {
                 <p className="imagepp">through tough streets smoothly</p>
                 <p className="btn">CALL: 8960109593</p>
 
+            </div>
+
+            <div className="aryDiv">
+                <h1 id="aryTitle">Next-Gen <span id="aryTitleSpan">Electric</span> Mobility</h1>
+                <img src={ary3} className="ary" alt="project-3" />
+                <img src={ary03} className="ary" alt="project-3" />
+                {/* <img src={ary04} className="ary" alt="project-3" /> */}
+
+                <img src={ary05} className="ary" alt="project-3" />
+                <img src={ary06} className="ary" alt="project-3" />
+
+
+                <img src={ary6} className="ary" alt="project-6" />
+                <img src={ary7} className="ary" alt="project-7" />
+                {/* <img src={ary8} className="ary" alt="project-8" /> */}
+                <img src={ary9} className="ary" alt="project-9" />
             </div>
 
             <div className="india">
