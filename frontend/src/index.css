@@ -1080,15 +1080,40 @@ body {
 
 }
 
+.mapDiv{
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+}
+
+.map{
+  height: 98%;
+  width: 98%;
+  margin: 5px;
+  border: 3px solid black;
+}
 
 
+#com{
+  height: 70px;
+  width: 70px;
+}
+
+#sri{
+  font-size: 16px;
+}
 
 /* ------------------------------------------------------------------------------ */
 
 
 @media (max-width:1024px) {
 
-
+.map{
+  height: 94%;
+  width: 94%;
+  margin: 5px;
+  border: 3px solid black;
+}
 
   #aryTitle {
     text-align: center;

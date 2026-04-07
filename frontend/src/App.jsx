@@ -60,7 +60,9 @@ import { useSelector } from "react-redux";
 import Video from "./pages/Video";
 import getOtherUser from "./pages/getOther";
 import Data from "./pages/Data";
+import Map from "./pages/Map";
 
+export const serverUrl = "http://localhost:8000"
 function App() {
   getCurrentUser()
   getOtherUser()
@@ -83,6 +85,8 @@ function App() {
       <Route path="/login" element={!userData ? <Login /> : <Navigate to="/" />} />
       <Route path="/signup" element={!userData ? <Signup /> : <Navigate to="/" />} />
       <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/map" element={<Map />} />
+
     </Routes>
   )
 }

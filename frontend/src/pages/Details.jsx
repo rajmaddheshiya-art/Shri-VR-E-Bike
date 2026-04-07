@@ -219,7 +219,7 @@ function Details() {
                             <li className="li">TECH</li><hr />
                             <li className="li" onClick={() => { nav("/video") }}>GALLERY</li><hr />
                             <li className="li" onClick={() => { nav("/model") }}>MODELS</li><hr />
-                            <li className="li">CONTACT</li><hr />
+                            <li className="li" onClick={() => { nav("/map") }}>MAP</li><hr />
                             <li className="li" onClick={() => { nav("/login") }}>LOGIN</li><hr />
                             <li className="li" onClick={() => { nav("/signup") }}>SIGNUP</li><hr />
                             <li className="li">INSTAGRAM</li><hr />
