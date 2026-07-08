@@ -303,35 +303,20 @@ function Details() {
             </h1>
 
             <div className="picsDiv">
-                <h1 id="pics">Our Office and Meeting Room</h1>
-                <img src={meeting} className="pics" />
+                
 
 
 
             </div><br />
 
             <div className="picsDiv">
-                <h1 id="pics">Our Presence: Excellence in Manufacturing, Showroom & Dealership Network</h1>
-                <img src={pics} className="pics" />
-                <img src={pics4} className="pics" />
-                <img src={pics6} className="pics" />
-                <img src={pics7} className="pics" />
-                <img src={pics8} className="pics" />
-                <img src={pics9} className="pics" />
-                <img src={pics5} className="pics" />
-                <img src={pics99} className="pics" />
+                
 
 
             </div>
 
             <div className="picsDiv" id="holiDiv">
-                <h1 id="pics"><span id="holi">H</span><span id="holio">o</span><span id="holil">l</span><span id="holii">i</span>  Special</h1>
-                <img src={sd3} className="pics" />
-                <img src={sd5} className="pics" />
-                <img src={sd6} className="pics" />
-                <img src={sd7} className="pics" />
-                <img src={sd8} className="pics" />
-                <video src={sd4} controls className="pics"></video>
+                
 
 
             </div>
